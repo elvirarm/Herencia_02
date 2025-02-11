@@ -13,5 +13,5 @@ class EmpleadoPorHora(nombre: String, id: Int, val horasTrabajadas: Int, val tar
 }
 
 class EmpleadoFijo(nombre: String, id: Int, val salarioFijo: Double, val numPagas: Int): Empleado(nombre, id){
-    override fun calculaSalario(): Double = salarioFijo * numPagas
+    override fun calculaSalario(): Double = salarioFijo / numPagas
 }
